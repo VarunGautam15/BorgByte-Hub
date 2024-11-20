@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    /* Black background */
+    color: white;
+    /* White text for contrast */
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e93131;
+    font-weight: bold;
+    cursor: pointer;
+    animation: 0.5s ease;
+}
+
+header .logo:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: #e93131;
+    text-shadow: 1px 1px 8px#e93131;
+}
+
+navbar a {
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+navbar a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: #e93131;
+    text-shadow: 1px 1px 8px#e93131;
+}
+
+.main img {
+    display: block;
+    max-width: 100%;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 50%;
+
+}
+
+
+h1.heading {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+h1.heading span {
+    color: #e93131;
+    /* Accent color */
+}
+
+h1.heading span:hover {
+    transform: scale(1.1);
+    text-shadow: 1px 1px 8px#ffffff;
+    color: white;
+    text-decoration: underline;
+}
+
+h3.sub.heading {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+h3.sub.heading span {
+    color: #e93131;
+    /* Accent color */
+}
+
+h3.heading span:hover {
+    transition: 0.3 ease-in;
+    text-shadow: 1px 1px 8px white;
+    color: white;
+    text-decoration: underline;
+}
+
+pre {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 13px;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    transition: 0.3 ease;
+}
+
+.social-icons a {
+    display: inline-flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: 0.1rem solid #e93131;
+    box-shadow: 1px 1px 5px #e93131;
+    font-size: 1rem;
+    border-radius: 50%;
+    margin: 0.1rem 0.5rem 1rem;
+
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #e93131;
+    box-shadow: 1px 1px 8px#e93131;
+    width: 80px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-span {
+    text-align: center;
+}
+
+.btn a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.typing-text {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+font-size: 15px;
+    background-color: #e93131;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 5px #e93131;
+}
+.MailTo {
+    color: #fff;
+}
+.container:hover {
+ transform: scale(1.1);
+ margin-bottom: 10px;
+}
+.typing-text span {
+    margin-left: 10px;
+    position: relative;
+}
+
+.typing-text span::before {
+    content: "Web Developer";
+    color: #e93131;
+    animation: words 20s infinite;
+
+}
+
+.typing-text span::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #e93131;
+    padding: 10px 10px;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid #e93131;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    25% {
+        content: "Web Developer";
+    }
+
+    25%,
+    50% {
+        content: "Graphic Designer";
+    }
+
+    50%,
+    75% {
+        content: "Web Developer";
+    }
+
+    75%,
+    100% {
+        content: "Graphic Designer";
+    }
+}
+
+@media screen and (max-width:640px) {
+    pre {
+        text-align: center;
+        max-width: 800px;
+        margin: 20px auto;
+        line-height: 1.6;
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    
+    
+}
