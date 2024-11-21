@@ -6,16 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="shortcut icon" href="Images/main2.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/favicon2.jpg" type="image/x-icon">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Varun Gautam">
-    <title>My Portfolio Website</title>
+    <title>BorgByte Hub</title>
 </head>
 
 <body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyADKQJaaMrw_sRGwVsk5y-qv6yA0rplqRY",
+          authDomain: "borgiit.firebaseapp.com",
+          projectId: "borgiit",
+          storageBucket: "borgiit.firebasestorage.app",
+          messagingSenderId: "725145795211",
+          appId: "1:725145795211:web:b14a0e12022747a1d5b28e",
+          measurementId: "G-CGGDM77QZG"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
     <header>
-        <a class="logo" href="index.html">Borgiit</a>
+        <a class="logo" href="index.html">BorgByte Hub</a>
         <navbar>
             <a href="/about.html"> About</a>
             <a href="/mywork.html"> My Work</a>
@@ -38,8 +61,8 @@
                 <a href="https://www.instagram.com/borgiit/profilecard/?igsh=NzMzNWp2a3J5YW9v"><i
                         class="fa-brands fa-instagram"></i></a>
                 <a
-                    href="https://linktr.ee/Borgiit?utm_source=linktree_profile_share&ltsid=1b7f52f1-398a-413a-8a57-72c193471338"><i
-                        class="fa-brands fa-link"></i></a>
+                    href="https://www.youtube.com/channel/UCTirlRWyTeb7dv6as1n9dXg"><i
+                        class="fa-brands fa-youtube"></i></a>
                 <a href="https://github.com/VarunGautam15"><i class="fa-brands fa-github"></i></a>
             </div>
             <div class="btn"><a href="mailto:vg5123550@gmail.com">Hire Me</a>
